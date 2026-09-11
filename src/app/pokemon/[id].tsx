@@ -29,10 +29,16 @@ export default function PokemonDetail() {
                         pokemon_name: data.pokemon_info.name,
                         pokemon_image: data.pokemon_image,
                         pokemon_id: data.pokemon_id,
+
                         types: {
                             type1,
                             type2,
                         },
+
+                        stats: data.pokemon_info.stats,
+                        height: data.pokemon_info.height,
+                        weight: data.pokemon_info.weight,
+                        abilities: data.pokemon_info.abilities,
                     });
                 } else {
                     setError("Não foi possível carregar os detalhes do Pokémon.");
